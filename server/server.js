@@ -4,7 +4,9 @@ let app = require('express')();
 let http = require('http').Server(app);
 let io = require('socket.io')(http);
 const SerialPort = require('serialport');
-const port = new SerialPort('/dev/ttyACM0');
+const port = new SerialPort('/dev/ttyACM0', {
+    parser: SerialPort.parsers.readline('\n')
+});
 
 io.on('connection', (socket) => {
     console.log('client connected');
@@ -25,6 +27,15 @@ io.on('connection', (socket) => {
     port.on('data', (data) => {
         /* get a buffer of data from the serial port */
         io.emit('serial-read', { val: data.toString() });
+        console.log(data.toString())
+    });
+
+    socket.on('get-dc', () => {
+        console.log('-----------------> Asked for DC')
+        port.write('0', (err) => {
+            if (err) { return console.log('Error: ', err.message) }
+            console.log('message written');
+        });
     });
 
     //socket.on('add-message', (message) => {

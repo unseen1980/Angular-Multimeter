@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs/Subject';
 import { Observable } from 'rxjs/Observable';
 import * as io from 'socket.io-client';
-import 'rxjs/Rx';
+import 'rxjs/add/observable/fromEvent';
+import 'rxjs/add/operator/throttle';
+import 'rxjs/add/observable/interval';
 
 
 @Injectable()
@@ -28,7 +29,11 @@ export class SerialService {
     this.socket = io(this.url);
     return Observable
       .fromEvent(this.socket, 'serial-read')
-      .throttle(ev => Observable.interval(1000));
+      .throttle(ev => Observable.interval(500));
+  }
+
+  getDC() {
+    this.socket.emit('get-dc');
   }
 }
 

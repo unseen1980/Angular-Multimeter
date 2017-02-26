@@ -17,13 +17,14 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { SerialService } from './serial-service.service';
 import * as io from 'socket.io-client';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/Rx';
-
 
 @Component({
   moduleId: module.id,
   selector: 'serial',
-  template: `<div><h2>{{message.val}}</h2></div>`,
+  template: `<div>
+      <h2>{{message.val}}</h2>
+      <button (click)="dc()">DC Volt</button>
+    </div>`,
   providers: [SerialService]
 })
 export class SerialComponent implements OnInit, OnDestroy {
@@ -37,11 +38,16 @@ export class SerialComponent implements OnInit, OnDestroy {
     this.connection = this.serialService.getSerial()
     .subscribe(msg => {
       this.message = msg;
+      //console.log(this.message.val)
     })
   }
 
   ngOnDestroy() {
     this.connection.unsubscribe();
+  }
+
+  dc(){
+    this.serialService.getDC();
   }
 }
 
