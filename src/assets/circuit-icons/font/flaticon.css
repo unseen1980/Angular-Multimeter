@@ -1,0 +1,81 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 22/06/2016 15:32
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}
+
+.flaticon-antenna:before { content: "\f100"; }
+.flaticon-attenuator:before { content: "\f101"; }
+.flaticon-battery:before { content: "\f102"; }
+.flaticon-battery-1:before { content: "\f103"; }
+.flaticon-capacitor:before { content: "\f104"; }
+.flaticon-capacitor-1:before { content: "\f105"; }
+.flaticon-cathode-ray-tube:before { content: "\f106"; }
+.flaticon-cell:before { content: "\f107"; }
+.flaticon-circuit:before { content: "\f108"; }
+.flaticon-circuit-1:before { content: "\f109"; }
+.flaticon-circuit-10:before { content: "\f10a"; }
+.flaticon-circuit-11:before { content: "\f10b"; }
+.flaticon-circuit-2:before { content: "\f10c"; }
+.flaticon-circuit-3:before { content: "\f10d"; }
+.flaticon-circuit-4:before { content: "\f10e"; }
+.flaticon-circuit-5:before { content: "\f10f"; }
+.flaticon-circuit-6:before { content: "\f110"; }
+.flaticon-circuit-7:before { content: "\f111"; }
+.flaticon-circuit-8:before { content: "\f112"; }
+.flaticon-circuit-9:before { content: "\f113"; }
+.flaticon-crystal:before { content: "\f114"; }
+.flaticon-dc:before { content: "\f115"; }
+.flaticon-dc-1:before { content: "\f116"; }
+.flaticon-diode:before { content: "\f117"; }
+.flaticon-diode-1:before { content: "\f118"; }
+.flaticon-electronics:before { content: "\f119"; }
+.flaticon-fuse:before { content: "\f11a"; }
+.flaticon-ground:before { content: "\f11b"; }
+.flaticon-inductor:before { content: "\f11c"; }
+.flaticon-inverter:before { content: "\f11d"; }
+.flaticon-lamp:before { content: "\f11e"; }
+.flaticon-meter:before { content: "\f11f"; }
+.flaticon-meter-1:before { content: "\f120"; }
+.flaticon-motor:before { content: "\f121"; }
+.flaticon-plug:before { content: "\f122"; }
+.flaticon-plug-1:before { content: "\f123"; }
+.flaticon-pnp:before { content: "\f124"; }
+.flaticon-pulse:before { content: "\f125"; }
+.flaticon-relays:before { content: "\f126"; }
+.flaticon-resistor:before { content: "\f127"; }
+.flaticon-resistor-1:before { content: "\f128"; }
+.flaticon-resistor-2:before { content: "\f129"; }
+.flaticon-resistor-3:before { content: "\f12a"; }
+.flaticon-source:before { content: "\f12b"; }
+.flaticon-supply:before { content: "\f12c"; }
+.flaticon-switch:before { content: "\f12d"; }
+.flaticon-transformer:before { content: "\f12e"; }
+.flaticon-voltmeter:before { content: "\f12f"; }
+.flaticon-witch:before { content: "\f130"; }
+.flaticon-zener-diode:before { content: "\f131"; }

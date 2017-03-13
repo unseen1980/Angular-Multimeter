@@ -1,0 +1,22 @@
+<md-button-toggle-group #group="mdButtonToggleGroup">
+    <md-button-toggle (change)="measure('dc')" value="dc">
+        dc
+        <md-icon>format_align_left</md-icon>
+    </md-button-toggle>
+    <md-button-toggle (change)="measure('ac')" value="ac">
+        ac
+        <md-icon>format_align_left</md-icon>
+    </md-button-toggle>
+    <md-button-toggle (change)="measure('resistance')" value="resistance">
+        resistance
+        <md-icon>format_align_left</md-icon>
+    </md-button-toggle>
+    <md-button-toggle (change)="measure('capacitance')" value="capacitance">
+        capacitance
+        <md-icon>format_align_left</md-icon>
+    </md-button-toggle>
+    <md-button-toggle (change)="measure('frequency')" value="frequency">
+        frequency
+        <md-icon>format_align_left</md-icon>
+    </md-button-toggle>
+</md-button-toggle-group>

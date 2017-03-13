@@ -1,0 +1,15 @@
+.content {
+    text-align: center;
+}
+
+.num {
+    font-size: 60px;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.mat-card {
+    min-width: 120px;
+}
