@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import { TestBed, inject } from '@angular/core/testing';
 
 // import { SerialServiceService } from './serial-service.service';
