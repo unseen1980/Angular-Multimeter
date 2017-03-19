@@ -1,22 +1,7 @@
-<md-button-toggle-group #group="mdButtonToggleGroup">
-    <md-button-toggle (change)="measure('dc')" value="dc">
-        dc
-        <md-icon>format_align_left</md-icon>
-    </md-button-toggle>
-    <md-button-toggle (change)="measure('ac')" value="ac">
-        ac
-        <md-icon>format_align_left</md-icon>
-    </md-button-toggle>
-    <md-button-toggle (change)="measure('resistance')" value="resistance">
-        resistance
-        <md-icon>format_align_left</md-icon>
-    </md-button-toggle>
-    <md-button-toggle (change)="measure('capacitance')" value="capacitance">
-        capacitance
-        <md-icon>format_align_left</md-icon>
-    </md-button-toggle>
-    <md-button-toggle (change)="measure('frequency')" value="frequency">
-        frequency
-        <md-icon>format_align_left</md-icon>
-    </md-button-toggle>
-</md-button-toggle-group>
+<div id="toggle-group">
+    <label class="blue"><input type="radio" (change)="measure('dc')" name="toggle"><span class="flaticon-voltmeter"></span></label>
+    <label class="blue"><input type="radio" (change)="measure('ac')" name="toggle"><span class="flaticon-supply"></span></label>
+    <label class="blue"><input type="radio" (change)="measure('resistance')" name="toggle"><span class="flaticon-resistor-1"></span></label>
+    <label class="blue"><input type="radio" (change)="measure('capacitance')" name="toggle"><span class="flaticon-capacitor"></span></label>
+    <label class="blue"><input type="radio" (change)="measure('frequency')" name="toggle"><span class="flaticon-antenna"></span></label>
+</div>

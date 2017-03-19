@@ -4,6 +4,7 @@
 
 .num {
     font-size: 60px;
+    color: #3F51B5;
 }
 
 .capitalize {
@@ -12,4 +13,13 @@
 
 .mat-card {
     min-width: 120px;
+}
+
+.mat-card-header {
+    margin: 0;
+    color: #3F51B5;
+}
+
+.mat-card-content {
+    min-height: 80px;
 }

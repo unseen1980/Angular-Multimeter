@@ -26,8 +26,12 @@ io.on('connection', (socket) => {
 
     port.on('data', (data) => {
         /* get a buffer of data from the serial port */
-        io.emit('serial-read', { val: data.toString() });
-        console.log(data.toString())
+        let res = data.toString(),
+            type = res.substr(res.length - 4),
+            value = res.slice(0, -4);
+        io.emit('serial-read', { val: value, type: type });
+        // console.log(value, '-', type);
+        console.log(res);
     });
 
     socket.on('get-dc', () => {

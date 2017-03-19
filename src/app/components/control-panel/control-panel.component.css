@@ -7,3 +7,59 @@
     text-align: center;
     margin: 20px;
 }
+
+#toggle-group {
+    float: left;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#toggle-group label {
+    float: left;
+    width: 100px;
+    margin: 4px;
+    background-color: #EFEFEF;
+    border-radius: 2px;
+    overflow: auto;
+    transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+    will-change: box-shadow;
+}
+
+#toggle-group label span {
+    text-align: center;
+    font-size: 21px;
+    padding: 10px 0px;
+    display: block;
+}
+
+#toggle-group label input {
+    position: absolute;
+    top: -20px;
+}
+
+#toggle-group input:checked+span {
+    background-color: #3F51B5;
+    color: #F7F7F7;
+}
+
+#toggle-group .blue {
+    background-color: #FFF;
+    color: #3F51B5;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+#toggle-group .blue:hover {
+    cursor: pointer;
+}
+
+[class^="flaticon-"]:before,
+[class*=" flaticon-"]:before {
+    margin-left: 0;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#toggle-group .blue:active {
+    transform: translateY(2px);
+}
