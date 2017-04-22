@@ -3,7 +3,7 @@
 }
 
 .num {
-    font-size: 60px;
+    font-size:48px;
     color: #3F51B5;
 }
 
@@ -13,11 +13,13 @@
 
 .mat-card {
     min-width: 120px;
+    padding: 5px 24px;
 }
 
 .mat-card-header {
     margin: 0;
     color: #3F51B5;
+    height: 20px;
 }
 
 .mat-card-content {
