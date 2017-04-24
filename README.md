@@ -1,5 +1,6 @@
 # Multimeter
 
+![alt tag](https://raw.githubusercontent.com/unseen1980/Angular-Multimeter/master/first_setup.JPG)
 ![alt tag](https://raw.githubusercontent.com/unseen1980/Angular-Multimeter/master/ng-multimeter.PNG)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.0.
