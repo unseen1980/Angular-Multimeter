@@ -1,0 +1,26 @@
+.content {
+    text-align: center;
+}
+
+.num {
+    font-size: px;
+    color: #3F51B5;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.mat-card {
+    min-width: 120px;
+    padding: 5px 24px;
+}
+
+.mat-card-header {
+    margin: 0;
+    color: #3F51B5;
+}
+
+.mat-card-content {
+    min-height: 80px;
+}
