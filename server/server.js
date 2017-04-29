@@ -26,9 +26,9 @@ io.on('connection', (socket) => {
 
     port.on('data', (data) => {
         /* get a buffer of data from the serial port */
-        let res = data.toString(),
-            type = res.substr(res.length - 4),
-            value = res.slice(0, -4);
+        let res = data.toString().trim(),
+            type = res.substr(res.length - 3),
+            value = res.slice(0, -3);
         io.emit('serial-read', { val: value, type: type });
         // console.log(value, '-', type);
         console.log(res);
@@ -37,6 +37,22 @@ io.on('connection', (socket) => {
     socket.on('get-dc', () => {
         console.log('-----------------> Asked for DC')
         port.write('0', (err) => {
+            if (err) { return console.log('Error: ', err.message) }
+            console.log('message written');
+        });
+    });
+
+    socket.on('get-resistance', () => {
+        console.log('-----------------> Asked for Resistance')
+        port.write('1', (err) => {
+            if (err) { return console.log('Error: ', err.message) }
+            console.log('message written');
+        });
+    });
+
+    socket.on('get-temperature', () => {
+        console.log('-----------------> Asked for Resistance')
+        port.write('2', (err) => {
             if (err) { return console.log('Error: ', err.message) }
             console.log('message written');
         });

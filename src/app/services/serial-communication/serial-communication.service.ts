@@ -35,6 +35,14 @@ export class SerialService {
   getDC() {
     this.socket.emit('get-dc');
   }
+
+  getResistance() {
+    this.socket.emit('get-resistance');
+  }
+
+  getTemperature() {
+    this.socket.emit('get-temperature');
+  }
 }
 
 

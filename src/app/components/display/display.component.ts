@@ -14,7 +14,9 @@ export class DisplayComponent implements OnInit {
   measurementValue: any;
   measurementType: any;
   private typesTable: IData = {
-    'vdc\r': 'DC Volt'
+    'vdc': 'DC Volt',
+    'ohm': 'Resistance in Ohm',
+    'cel': 'Temperature in Celsius'
   };
 
   constructor(private displayFeederService: DisplayFeederService) {

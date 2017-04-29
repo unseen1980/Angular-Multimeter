@@ -21,7 +21,7 @@ export class ControlPanelComponent implements OnInit {
       .subscribe(msg => {
         this.message = msg;
         this.displayFeederService.publishData(this.message);
-      });    
+      });
   }
 
   ngOnDestroy() {
@@ -29,8 +29,14 @@ export class ControlPanelComponent implements OnInit {
   }
 
   measure(val) {
-    if(val === 'dc'){
-      this.serialService.getDC()
+    if (val === 'dc') {
+      this.serialService.getDC();
+    }
+    else if (val == 'resistance') {
+      this.serialService.getResistance();
+    }
+    else if (val === 'temperature') {
+      this.serialService.getTemperature();
     }
   }
 

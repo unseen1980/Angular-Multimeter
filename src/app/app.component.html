@@ -1,3 +1,13 @@
-<toolbar></toolbar>
-<display></display>
-<control-panel></control-panel>
+<md-sidenav-container>
+    <md-toolbar color="primary">
+        <span>NgMultimeter</span>
+        <span class="spacer"></span>
+        <md-icon class="icon" (click)="sidenav.open()">menu</md-icon>
+    </md-toolbar>
+    <md-sidenav #sidenav class="sidenav">
+        <a md-raised-button color="primary" class="settings-button" routerLink=".">Settings</a>
+        <a md-raised-button color="primary" class="settings-button" routerLink=".">Status</a>
+    </md-sidenav>
+    <display></display>
+    <control-panel></control-panel>
+</md-sidenav-container>
